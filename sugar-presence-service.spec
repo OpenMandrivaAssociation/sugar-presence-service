@@ -35,10 +35,10 @@ make
 
 %install
 rm -rf %{buildroot}
-chmod 0755 src/main.py
 make  \
 	DESTDIR=%{buildroot} \
 	install
+chmod 0755 %{buildroot}/%{_datadir}/sugar-presence-service/main.py
 
 
 %clean
