@@ -11,7 +11,7 @@ Url: http://sugarlabs.org/
 Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-0.84.0.tar.bz2
 
 Requires: avahi  
-Requires: gnutls >= 2.6
+Requires: gnutls >= 2.4
 Requires: python  
 Requires: sugar-base >= 0.84.0
 Requires: telepathy-gabble >= 0.7.21
@@ -22,6 +22,7 @@ BuildRequires: libpython-devel
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
+
 %description
 The Sugar presence service.
 
@@ -30,15 +31,12 @@ The Sugar presence service.
 
 
 %build
-%configure 
-make 
+%configure
+make
 
 %install
 rm -rf %{buildroot}
-make  \
-	DESTDIR=%{buildroot} \
-	install
-chmod 0755 %{buildroot}/%{_datadir}/sugar-presence-service/main.py
+make DESTDIR=%{buildroot} install
 
 
 %clean
@@ -46,7 +44,10 @@ rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root,-)
-%{_datadir}/sugar-presence-service/*
+%dir %{_datadir}/dbus-1
+%dir %{_datadir}/dbus-1/services
+%{_datadir}/sugar-presence-service
+%attr(755,root,root) %{_datadir}/sugar-presence-service/main.py
 %{_datadir}/dbus*/services/*
 %{_bindir}/*
 %doc COPYING NEWS
