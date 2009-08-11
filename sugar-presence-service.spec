@@ -31,6 +31,7 @@ The Sugar presence service.
 
 
 %build
+%define __libtoolize true
 %configure
 make
 
