@@ -2,19 +2,19 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-presence-service
-Version: 0.86.0
+Version: 0.88.0
 Release: %mkrel 1
 Summary: The Sugar presence service
 License: GPLv2+
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-0.86.0.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-0.88.0.tar.bz2
 
 Requires: avahi  
 Requires: gnutls >= 2.4
 Requires: python  
-Requires: sugar-base >= 0.86.0
+Requires: sugar-base >= 0.88.0
 Requires: telepathy-gabble >= 0.7.21
 Requires: python-telepathy >= 0.15.7
 Requires: telepathy-salut >= 0.3.8
@@ -28,7 +28,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 The Sugar presence service.
 
 %prep
-%setup -q -n sugar-presence-service-0.86.0
+%setup -q -n sugar-presence-service-0.88.0
 
 
 %build
