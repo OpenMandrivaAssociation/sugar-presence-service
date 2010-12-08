@@ -3,7 +3,7 @@
 
 Name: sugar-presence-service
 Version: 0.88.0
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: The Sugar presence service
 License: GPLv2+
 Group: Graphical desktop/Other
