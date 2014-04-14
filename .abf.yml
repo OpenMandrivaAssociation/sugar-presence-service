@@ -1,2 +1,4 @@
+removed_sources:
+  sugar-presence-service-0.88.0.tar.bz2: bc24aebf4694fcf42f7daafbc6b13cc46f6fb3e3
 sources:
-  "sugar-presence-service-0.88.0.tar.bz2": bc24aebf4694fcf42f7daafbc6b13cc46f6fb3e3
+  sugar-presence-service-0.90.2.tar.bz2: e31f3822b0385b6727e9bba84e3b2a18ea0c2e90
