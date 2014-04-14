@@ -4,14 +4,14 @@
 %define debug_package %{nil}
 
 Name:		sugar-presence-service
-Version:	0.88.0
-Release:	4
+Version:	0.90.2
+Release:	1
 Summary:	The Sugar presence service
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://sugarlabs.org/
 
-Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-0.88.0.tar.bz2
+Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-%{version}.tar.bz2
 
 Requires:	avahi  
 Requires:	gnutls >= 2.4
@@ -27,7 +27,7 @@ BuildRequires: python-devel
 The Sugar presence service.
 
 %prep
-%setup -q -n sugar-presence-service-0.88.0
+%setup -q
 
 
 %build
