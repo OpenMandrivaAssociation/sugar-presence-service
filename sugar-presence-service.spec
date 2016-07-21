@@ -5,7 +5,7 @@
 
 Name:		sugar-presence-service
 Version:	0.90.2
-Release:	2
+Release:	3
 Summary:	The Sugar presence service
 License:	GPLv2+
 Group:		Graphical desktop/Other
@@ -15,10 +15,10 @@ Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-se
 
 Requires:	avahi  
 Requires:	gnutls >= 2.4
-Requires:	python  
+Requires:	python2
 Requires:	sugar-base >= 0.88.0
 Requires:	telepathy-gabble >= 0.7.21
-Requires:	python-telepathy >= 0.15.7
+Requires:	python2-telepathy >= 0.15.7
 Requires:	telepathy-salut >= 0.3.8
 
 BuildRequires: python-devel  
