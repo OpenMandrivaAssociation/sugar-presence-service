@@ -9,7 +9,7 @@ Release:	3
 Summary:	The Sugar presence service
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Url:		http://sugarlabs.org/
+Url:		https://sugarlabs.org/
 
 Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-presence-service/sugar-presence-service-%{version}.tar.bz2
 
