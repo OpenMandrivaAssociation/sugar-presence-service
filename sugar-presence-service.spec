@@ -21,6 +21,11 @@ Requires:	telepathy-gabble >= 0.7.21
 Requires:	python2-telepathy >= 0.15.7
 Requires:	telepathy-salut >= 0.3.8
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: python-devel  
 
 %description
